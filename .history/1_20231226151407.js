@@ -1,0 +1,10 @@
+function HelloWorld(){
+    return "HelloWorld"
+}
+function r(){
+    return HelloWorld();
+    
+}
+const f = createHelloWorld();
+f();
+

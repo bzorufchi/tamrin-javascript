@@ -1,0 +1,4 @@
+
+const f = createHelloWorld();
+f();
+
