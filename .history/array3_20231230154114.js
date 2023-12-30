@@ -1,0 +1,7 @@
+var i=5;
+function counter(i){
+console.log(i);
+i=i+1;
+return counter(i);
+}
+
