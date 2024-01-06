@@ -1,0 +1,6 @@
+function Calculator(){
+
+}
+function add(){
+
+}
