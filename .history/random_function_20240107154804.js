@@ -11,9 +11,7 @@ arr[i]=random()
 }
 console.log(arr)
 console.log(test) 
-b(arr,test)
-console.log('جای اشتباه',cunterp)
-console.log('صحیح',cuntert)
+r(arr,test)
 
 function random(){
     var x=Math.floor(Math.random() * 10);
@@ -45,9 +43,11 @@ function b(x,z){
         else{
             cunterp++
         }
+       
     }
     }
     
    }   
 }
 
+b(arr,test)

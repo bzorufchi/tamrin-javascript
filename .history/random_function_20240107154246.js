@@ -1,8 +1,5 @@
 var arr=[]
 var test =[2,4,5,9]
-var cuntert=0
-var cunterw=0
-var cunterp=0
 console.log(random())
 for (let i = 0; i < 4; i++) {
 arr[i]=random()
@@ -11,9 +8,7 @@ arr[i]=random()
 }
 console.log(arr)
 console.log(test) 
-b(arr,test)
-console.log('جای اشتباه',cunterp)
-console.log('صحیح',cuntert)
+r(arr,test)
 
 function random(){
     var x=Math.floor(Math.random() * 10);
@@ -34,20 +29,19 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 }
-function b(x,z){
-    for (let i = 0; i < x.length; i++) 
-    {
-   for (let j = 0; j < z.length; j++) {
-    if(x[i]==z[j]){
-        if(i==j){
-            cuntert++
-        }
-        else{
-            cunterp++
-        }
+function b(arr,test){
+    for (let i = 0; i < arr.length; i++) {
+   for (let j = 0; j < test.length; j++) {
+    if(arr[i]==test[j]){
+        if(i)
+       console.log(arr[i],test[i],'جایگاه عدد برابر نیست')
     }
+    else{
+      console.log('عدد برابر پیدا نشد')
     }
     
-   }   
+   }
+    
 }
-
+}
+b(arr,test)

@@ -11,9 +11,7 @@ arr[i]=random()
 }
 console.log(arr)
 console.log(test) 
-b(arr,test)
-console.log('جای اشتباه',cunterp)
-console.log('صحیح',cuntert)
+r(arr,test)
 
 function random(){
     var x=Math.floor(Math.random() * 10);
@@ -35,19 +33,23 @@ for (let i = 0; i < arr.length; i++) {
 
 }
 function b(x,z){
-    for (let i = 0; i < x.length; i++) 
-    {
+    for (let i = 0; i < x.length; i++) {
    for (let j = 0; j < z.length; j++) {
     if(x[i]==z[j]){
         if(i==j){
-            cuntert++
+
         }
         else{
-            cunterp++
+
         }
+       
     }
+    else{
+      console.log('عدد برابر پیدا نشد')
     }
     
-   }   
+   }
+    
 }
-
+}
+b(arr,test)
